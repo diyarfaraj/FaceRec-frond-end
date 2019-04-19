@@ -6,7 +6,10 @@ const ImageLinkForm = ({onInputChange, onBottunSubmit}) => {
 	return (
 		<div>
 			<p className='f3'>
-			{'Här sker magin. Klistra in bild-länk från nätet som slutar på .jpg eller .png!'}	
+			{'Här sker magin.'}	
+			</p>
+			<p className='f5'>
+			{'Klistra in bild-länk från nätet som slutar på .jpg eller .png!'}	
 			</p>
 
 			<div className='center'>
