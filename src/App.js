@@ -105,6 +105,7 @@ this.setState({imageUrl: this.state.input});
       .then(response =>response.json())
       .then(count => {
         this.setState(Object.assign(this.state.user, { entries: count}))
+        
       })
       .catch(console.log)
   }
