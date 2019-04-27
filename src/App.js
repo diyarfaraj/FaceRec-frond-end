@@ -4,7 +4,7 @@ import Signin from './components/Signin/Signin.js';
 import Register from './components/Register/Register.js';
 import FaceRec from './components/FaceRec/FaceRec.js';
 import Logo from './components/Logo/Logo.js';
-import ImgageLinkForm from './components/ImageLinkForm/ImageLinkForm.js';
+import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js';
 import Rank from './components/Rank/Rank.js';
 import Particles from 'react-particles-js';
 import './App.css';
@@ -125,6 +125,7 @@ onRouteChange = (route) =>{
 }
   render() {
     const {isSignedIn, imageUrl, route, box, } = this.state;
+
     return (
       <div className="App">
       <Particles className='particles'
@@ -134,9 +135,10 @@ onRouteChange = (route) =>{
           ? <div>
               <Logo />
                 <Rank name={this.state.user.name} entries={this.state.user.entries}/>
-                <ImgageLinkForm 
+                <ImageLinkForm 
                 onInputChange={this.onInputChange} 
-                onBottunSubmit={this.onBottunSubmit}/>
+                onBottunSubmit={this.onBottunSubmit}
+                disabled={!this.state.value}/>
                 <FaceRec box={box} imageUrl={imageUrl}/>
             </div>
             : (
