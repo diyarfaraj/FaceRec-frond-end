@@ -18,7 +18,7 @@ const particlesOps = {
                         enable: true,
                         type: 'inside',
                         move: {
-                            radius: 5
+                            radius: 30
                         },
                         url: 'path/to/svg.svg'
                     }
@@ -83,6 +83,7 @@ onInputChange = (event) => {
 
 onBottunSubmit = () => {
 this.setState({imageUrl: this.state.input}); 
+
  fetch('https://guarded-depths-22127.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
@@ -125,7 +126,7 @@ onRouteChange = (route) =>{
 }
   render() {
     const {isSignedIn, imageUrl, route, box, } = this.state;
-
+  
     return (
       <div className="App">
       <Particles className='particles'
@@ -138,7 +139,8 @@ onRouteChange = (route) =>{
                 <ImageLinkForm 
                 onInputChange={this.onInputChange} 
                 onBottunSubmit={this.onBottunSubmit}
-                disabled={!this.state.value}/>
+
+                />
                 <FaceRec box={box} imageUrl={imageUrl}/>
             </div>
             : (

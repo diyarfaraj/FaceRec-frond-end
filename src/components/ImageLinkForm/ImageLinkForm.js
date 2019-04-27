@@ -2,14 +2,16 @@ import React from 'react';
 import './ImageLinkForm.css';
 
 
+
 const ImageLinkForm = ({onInputChange, onBottunSubmit}) => {
+
 	return (
 		<div>
 			<p className='f3'>
-			{'Här sker magin.'}	
+			{' '}	
 			</p>
 			<p className='f5'>
-			{'Klistra in bild-länk från nätet som slutar på .jpg eller .png!'}	
+			{' '}	
 			</p>
 
 			<div className='center'>
@@ -18,7 +20,7 @@ const ImageLinkForm = ({onInputChange, onBottunSubmit}) => {
 					<input className='f4 pa2 w-70 ceneter' placeholder="Klistra in länk här"  onChange={onInputChange}/>
 					
 					<button className='bottun black w-30 f4 link ph3 pv2 dib black bg-light-yellow'  
-					onClick={onBottunSubmit} disabled={!onInputChange} >
+					onClick={onBottunSubmit}>
 					
 					Upptäck</button>
 				</div>
