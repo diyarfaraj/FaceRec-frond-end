@@ -11,7 +11,7 @@ const ImageLinkForm = ({onInputChange, onBottunSubmit}) => {
 			{' '}	
 			</p>
 			<p className='f5'>
-			{' '}	
+			{'Klistra in bildens länk i rutan nedan och sedan klicka på "Upptäck" '}	
 			</p>
 
 			<div className='center'>
