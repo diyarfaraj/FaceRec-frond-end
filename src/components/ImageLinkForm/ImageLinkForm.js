@@ -17,7 +17,7 @@ const ImageLinkForm = ({onInputChange, onBottunSubmit}) => {
 			<div className='center'>
 				<div className= 'form center pa4 br3 shadow-5'>
 					
-					<input className='f4 pa2 w-70 ceneter' placeholder="Klistra in länk här"  onChange={onInputChange}/>
+					<input className='f4 pa2 w-70 ceneter' placeholder="Klistra in bildens länk här"  onChange={onInputChange}/>
 					
 					<button className='bottun black w-30 f4 link ph3 pv2 dib black bg-light-yellow'  
 					onClick={onBottunSubmit}>
