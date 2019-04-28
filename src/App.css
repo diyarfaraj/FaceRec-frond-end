@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.form {
+  width: 700px;
+  background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 170%);
+}
+
 .center {
   display: flex;
   justify-content: center;
